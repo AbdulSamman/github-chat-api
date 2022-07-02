@@ -30,11 +30,6 @@ async function renderMsg(from, message, id) {
   try {
     const post = document.createElement("div");
     post.classList.add(`rounded`, `mb-2`, `p-3`, `text-light`);
-
-    post.style.backgroundColor = "#5885AF";
-    post.style.boxShadow = `
-    inset 1em 1em 1em -1em white,
-    inset -1em -1em 1em -1em black`;
     const titleElement = document.createElement("h2");
 
     const contentElement = document.createElement("p");
@@ -48,7 +43,8 @@ async function renderMsg(from, message, id) {
 
     if (objAvatar.name && objAvatar.avatar_url) {
       githubName = objAvatar.name;
-      titleElement.textContent = githubName;
+      titleElement.innerHTML = `<i class="fa-brands fa-github" title="github/user"></i> ${githubName}`;
+
       avatarImg.src = objAvatar.avatar_url;
       post.style.backgroundColor = "#189AB4";
     } else {

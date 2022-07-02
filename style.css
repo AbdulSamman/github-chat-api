@@ -34,7 +34,7 @@ h2 {
   overflow-wrap: break-word;
   background-image: linear-gradient(30deg, #4040f3, #274472);
   animation: fade 5s alternate infinite;
-  font-size: 30%;
+  font-size: 2rem;
   background-clip: text;
   -webkit-background-clip: text;
   color: #274472;

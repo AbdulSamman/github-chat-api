@@ -2,7 +2,6 @@ const form = document.querySelector("form");
 const titleInput = document.getElementById("titleInput");
 const textInput = document.getElementById("txtbody");
 const msgContainer = document.getElementById("postContainer");
-const body = document.querySelector("body");
 
 const apiUrl = `https://dci-chat-api.herokuapp.com/messages`;
 
@@ -95,6 +94,10 @@ form.addEventListener("submit", createMsg);
 
 async function createMsg(event) {
   event.preventDefault();
+  if (titleInput.value === "") {
+    alert("enter a title");
+    return;
+  }
 
   const fromMsg = titleInput.value;
   const txtMsg = textInput.value;

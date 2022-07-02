@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Titan+One&family=Trispace:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: sans-serif;
+  background: linear-gradient(#3f87a6, #ebf8e1, #f69d3c);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.btn-outline-danger {
+  --bs-btn-border-color: none;
+}
+.btn {
+  margin: 10px 0;
+}
+h2,
+.display-6,
+.btn {
+  font-family: "Titan One", serif;
+}
+h2 {
+  padding-top: 5px;
+  overflow-wrap: break-word;
+  background-image: linear-gradient(30deg, #4040f3, #274472);
+  animation: fade 5s alternate infinite;
+  font-size: 30%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #274472;
+}
+
+p {
+  font-weight: bold;
+  font-family: "Trispace", sans-serif;
+  overflow-wrap: break-word;
+}
+img,
+.imgNotUser {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+}
+
+.imgNotUser {
+  background-color: #b1d4e0;
+  text-align: center;
+  line-height: 1.4;
+}
+.spanNotUser {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Abril Fatface", serif;
+}
+.avatarImgCon {
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes fade {
+  from {
+    background-position-x: 0;
+    color: transparent;
+  }
+
+  to {
+    background-position-x: 100%;
+  }
+}

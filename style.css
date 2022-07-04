@@ -18,11 +18,15 @@ body {
 #txtbody {
   box-shadow: inset 0 0 0.5em 0.5em #cde;
 }
-.btn-outline-danger {
+.btn-outline-danger,
+.btn-outline-dark {
   --bs-btn-border-color: none;
 }
 .btn {
   margin: 10px 0;
+}
+.btn-warning {
+  font-size: 1.7rem;
 }
 h2,
 .display-6,
@@ -44,6 +48,7 @@ p {
   font-weight: bold;
   font-family: "Trispace", sans-serif;
   overflow-wrap: break-word;
+  font-size: 1.5rem;
 }
 img,
 .imgNotUser {
@@ -75,7 +80,9 @@ img,
 .fa-brands {
   font-size: 2rem;
 }
-
+footer {
+  text-align: center;
+}
 @keyframes fade {
   from {
     background-position-x: 0;

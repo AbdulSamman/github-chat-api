@@ -95,7 +95,7 @@ form.addEventListener("submit", createMsg);
 async function createMsg(event) {
   event.preventDefault();
   if (titleInput.value === "") {
-    alert("enter a title");
+    alert("Enter a title");
     return;
   }
 
